@@ -77,4 +77,22 @@ public class MaxTest {
 		String max = new MaxMain<String>("Apple", "Banana", "Peach").findMaximum();
 		assertEquals("Peach", max);
 	}
+
+	@Test
+	public void givenMoreThan3Elements_ReturnMaxInteger() {
+		Integer max = MaxMain.findMaximum(4, 3, 2, 6, 90, 34, 23);
+		assertEquals((Integer) 90, max);
+	}
+
+	@Test
+	public void givenMoreThan3Elements_ReturnMaxFloat() {
+		Double max = MaxMain.findMaximum(4.9, 3.8, 2.6, 6.4, 90.0, 34.9, 2.3);
+		assertEquals((Double) 90.0, max);
+	}
+
+	@Test
+	public void givenMoreThan3Elements_ReturnMaxString() {
+		String max = MaxMain.findMaximum("Apple", "Orange", "Peach", "Mango", "Strawberry");
+		assertEquals("Strawberry", max);
+	}
 }

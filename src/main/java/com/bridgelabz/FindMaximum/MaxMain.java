@@ -1,5 +1,7 @@
 package com.bridgelabz.FindMaximum;
 
+import java.util.Arrays;
+
 public class MaxMain<E extends Comparable<E>> {
 	E xobj;
 	E yobj;
@@ -27,6 +29,12 @@ public class MaxMain<E extends Comparable<E>> {
 			max = c;
 		}
 		return max;
+	}
+
+	// Find maximum for more than 3 Objects using Options and Sorting
+	public static <E extends Comparable<E>> E findMaximum(E... arr) {
+		Arrays.sort(arr);
+		return arr[arr.length - 1];
 	}
 
 	public E findMaximum() {
