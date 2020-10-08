@@ -28,4 +28,19 @@ public class MaxTest {
 		Integer max = m.findMaximum(1, 2, 3);
 		assertEquals((Integer) 3, max);
 	}
+	@Test
+	public void givenThreeFloats_whenMaxAtPosition1_ReturnPosition1Float() {
+		Double max = m.findMaximum(10.2, 9.4, 3.7);
+		assertEquals((Double) 10.2, max);
+	}
+	@Test
+	public void givenThreeFloats_whenMaxAtPosition2_ReturnPosition2Float() {
+		Double max = m.findMaximum(6.2, 9.3, 3.8);
+		assertEquals((Double) 9.3, max);
+	}
+	@Test
+	public void givenThreeFloats_whenMaxAtPosition3_ReturnPosition3Float() {
+		Double max = m.findMaximum(1.1, 2.2, 3.3);
+		assertEquals((Double) 3.3, max);
+	}
 }
