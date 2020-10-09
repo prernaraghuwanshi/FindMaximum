@@ -38,6 +38,7 @@ public class MaxMain<E extends Comparable<E>> {
 	}
 
 	// Find maximum for more than 3 Objects using Options and Sorting
+	@SafeVarargs
 	public static <E extends Comparable<E>> E findMaximum(E... arr) {
 		Arrays.sort(arr);
 		E max = arr[arr.length - 1];
@@ -46,6 +47,7 @@ public class MaxMain<E extends Comparable<E>> {
 	}
 
 	// Print function for more than 3 objects
+	@SafeVarargs
 	public static <E> void printMax(E max, E... arr) {
 		System.out.println("Array is ");
 		for (E iterator : arr)

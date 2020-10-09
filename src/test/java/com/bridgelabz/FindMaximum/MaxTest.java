@@ -26,20 +26,20 @@ public class MaxTest {
 
 	@Test
 	public void givenThreeFloats_whenMaxAtPosition1_ReturnPosition1Float() {
-		Double max = MaxMain.findMaximum(10.2, 9.4, 3.7);
-		assertEquals((Double) 10.2, max);
+		Float max = MaxMain.findMaximum(10.2f, 9.4f, 3.7f);
+		assertEquals((Float) 10.2f, max);
 	}
 
 	@Test
 	public void givenThreeFloats_whenMaxAtPosition2_ReturnPosition2Float() {
-		Double max = MaxMain.findMaximum(6.2, 9.3, 3.8);
-		assertEquals((Double) 9.3, max);
+		Float max = MaxMain.findMaximum(6.2f, 9.3f, 3.8f);
+		assertEquals((Float) 9.3f, max);
 	}
 
 	@Test
 	public void givenThreeFloats_whenMaxAtPosition3_ReturnPosition3Float() {
-		Double max = MaxMain.findMaximum(1.1, 2.2, 3.3);
-		assertEquals((Double) 3.3, max);
+		Float max = MaxMain.findMaximum(1.1f, 2.2f, 3.3f);
+		assertEquals((Float) 3.3f, max);
 	}
 
 	@Test
@@ -68,8 +68,8 @@ public class MaxTest {
 
 	@Test
 	public void givenGenericClassFloat_ReturnMaxFloat() {
-		Double max = new MaxMain<Double>(4.4, 3.3, 2.2).findMaximum();
-		assertEquals((Double) 4.4, max);
+		Float max = new MaxMain<Float>(4.4f, 3.3f, 2.2f).findMaximum();
+		assertEquals((Float) 4.4f, max);
 	}
 
 	@Test
@@ -86,8 +86,8 @@ public class MaxTest {
 
 	@Test
 	public void givenMoreThan3Elements_ReturnMaxFloat() {
-		Double max = MaxMain.findMaximum(4.9, 3.8, 2.6, 6.4, 90.0, 34.9, 2.3);
-		assertEquals((Double) 90.0, max);
+		Float max = MaxMain.findMaximum(4.9f, 3.8f, 2.6f, 6.4f, 90.0f, 34.9f, 2.3f);
+		assertEquals((Float) 90.0f, max);
 	}
 
 	@Test
